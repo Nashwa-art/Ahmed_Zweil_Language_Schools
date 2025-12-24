@@ -1,7 +1,7 @@
 function getResult() {
     let seat = document.getElementById("seat").value;
 
-    fetch("https://script.google.com/macros/s/AKfycbwW1U7TqPm5YCC9C0v8gvlROw9rZhPvuK0wMy03mrgt7LINMfPwl5bQHj6thXZ55bq42w/exec?seat=" + seat)
+    fetch("https://script.google.com/macros/s/AKfycbyuHqno-9AdTVy8GmOUXQD3M6qxFOTizTT7rv1tzR4MGSr2gypCoNK3UQ-jeFh0Buxq3w/exec?seat=" + seat)
     .then(res => res.json())
     .then(data => {
         if (data.error) {
@@ -16,19 +16,22 @@ function getResult() {
             document.getElementById("beehive").innerText = "";
             document.getElementById("quran").innerText = "";
             document.getElementById("total").innerText = "";
+            document.getElementById("G/F").innerText = "";
             return;
         }
 
-        document.getElementById("name").innerText = "الاسم : " + data.name;
-        document.getElementById("math").innerText = "رياضيات : " + data.math;
-        document.getElementById("science").innerText = "علوم : " + data.science;
-        document.getElementById("arabic").innerText = "عربي : " + data.arabic;
-        document.getElementById("english").innerText = "إنجليزي : " + data.english;
-        document.getElementById("social").innerText = "دراسات : " + data.social;
-        document.getElementById("it").innerText = "حاسب : " + data.it;
-        document.getElementById("religion").innerText = "دين : " + data.religion;
-        document.getElementById("beehive").innerText = "نحلة : " + data.beehive;
-        document.getElementById("quran").innerText = "قرآن : " + data.quran;
-        document.getElementById("total").innerText = "المجموع : " + data.total;
+        document.getElementById("name").innerText = "Name : " + data.name;
+        document.getElementById("math").innerText = "Maths : " + data.math;
+        document.getElementById("science").innerText = "Science : " + data.science;
+        document.getElementById("arabic").innerText = "Arabic : " + data.arabic;
+        document.getElementById("english").innerText = "English : " + data.english;
+        document.getElementById("social").innerText = "Social Studies : " + data.social;
+        document.getElementById("total").innerText = "Total: " + data.total;
+        document.getElementById("it").innerText = "IT : " + data.it;
+        document.getElementById("religion").innerText = "Religion : " + data.religion;
+        document.getElementById("beehive").innerText = "Beehive : " + data.beehive;
+        document.getElementById("quran").innerText = "Quran : " + data.quran;
+        document.getElementById("G/F").innerText = "G/F : " + data.language2;
+        
     });
 }
