@@ -4,7 +4,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background: url("images.png") no-repeat center center fixed;
+  background: url("images.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -26,6 +26,12 @@ input, button {
   display: block;
 }
 
+#loading {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
 .result {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 15px;
@@ -34,6 +40,24 @@ input, button {
   width: 90%;
   max-width: 400px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.result table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.result td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: right;
+  font-size: 1em;
+}
+
+.result td:first-child {
+  font-weight: bold;
+  color: #333;
 }
 
 @media (max-width: 600px) {
@@ -51,3 +75,4 @@ input, button {
     font-size: 0.9em;
   }
 }
+
