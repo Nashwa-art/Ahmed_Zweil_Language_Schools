@@ -24,6 +24,7 @@ function getResult() {
         document.getElementById("beehive").innerText = data.beehive;
         document.getElementById("quran").innerText = data.quran;
         document.getElementById("total").innerText = data.total;
+        document.getElementById("language2").innerText = data.language2;
     });
 }
 
@@ -31,4 +32,5 @@ function clearFields() {
     const fields = ["math", "science", "arabic", "english", "social", "it", "religion", "beehive", "quran", "total"];
     fields.forEach(id => document.getElementById(id).innerText = "");
 }
+
 
