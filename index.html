@@ -7,35 +7,37 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>
-Inquiry about the student’s result</h2>
+  <h2>اStudents Results</h2>
   <input type="text" id="seat" placeholder="ادخل رقم الجلوس">
   <button onclick="getResult()">عرض النتيجة</button>
+  <p id="loading"></p>
 
   <div class="result">
     <p id="name"></p>
-    <p id="math"></p>
-    <p id="science"></p>
-    <p id="arabic"></p>
-    <p id="english"></p>
-    <p id="social"></p>
-    <p id="total"></p>
-    <p id="it"></p>
-    <p id="G/F"></p>
-    <p id="religion"></p>
-    <p id="beehive"></p>
-    <p id="quran"></p>
-    
-
+    <table>
+      <tr><td>رياضيات</td><td id="math"></td></tr>
+      <tr><td>علوم</td><td id="science"></td></tr>
+      <tr><td>عربي</td><td id="arabic"></td></tr>
+      <tr><td>إنجليزي</td><td id="english"></td></tr>
+      <tr><td>دراسات</td><td id="social"></td></tr>
+      <tr><td>حاسب</td><td id="it"></td></tr>
+      <tr><td>دين</td><td id="religion"></td></tr>
+      <tr><td>نحلة</td><td id="beehive"></td></tr>
+      <tr><td>قرآن</td><td id="quran"></td></tr>
+      <tr><td><strong>المجموع</strong></td><td id="total"></td></tr>
+    </table>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
 
+</html>
+
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
