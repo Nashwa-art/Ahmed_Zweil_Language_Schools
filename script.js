@@ -30,9 +30,10 @@ function getResult() {
 }
 
 function clearFields() {
-    const fields = ["math", "science", "arabic", "english", "social", "it", "religion", "beehive", "quran", "total"];
+    const fields = ["math", "class", "science", "arabic", "english", "social", "it", "religion", "beehive", "quran", "total"];
     fields.forEach(id => document.getElementById(id).innerText = "");
 }
+
 
 
 
