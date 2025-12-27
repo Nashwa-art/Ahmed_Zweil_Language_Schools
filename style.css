@@ -74,6 +74,19 @@ input, button {
     width: 95%;
     font-size: 0.9em;
   }
+  .result .info {
+  width: 100%;
+  margin-bottom: 15px;
 }
+
+.result .info td {
+  padding: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+}
+
+}
+
 
 
