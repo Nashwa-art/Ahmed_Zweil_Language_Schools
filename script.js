@@ -14,7 +14,6 @@ function getResult() {
         }
 
         document.getElementById("name").innerText = "Name: " + data.name;
-        ocument.getElementById("class").innerText = data.class;
         document.getElementById("math").innerText = data.math;
         document.getElementById("science").innerText = data.science;
         document.getElementById("arabic").innerText = data.arabic;
@@ -30,9 +29,10 @@ function getResult() {
 }
 
 function clearFields() {
-    const fields = ["math", "class", "science", "arabic", "english", "social", "it", "religion", "beehive", "quran", "total"];
+    const fields = ["math", "science", "arabic", "english", "social", "it", "religion", "beehive", "quran", "total"];
     fields.forEach(id => document.getElementById(id).innerText = "");
 }
+
 
 
 
